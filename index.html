@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-50 font-hind">
     <style>
@@ -89,6 +90,412 @@ Government Emergency Services at Your Fingertip – A Project by Government of t
 </p>
 
 </section>
+
+
+    <!-- Main Content Section (Cards & Call History) -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Left Column: Service Cards -->
+      <div class="md:col-span-2 space-y-4">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">জরুরী সেবা</h2>
+
+        <!-- Service Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <!-- Card 1: National Emergency Number -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="National Emergency Number" data-service-number="999">
+            <div class=" flex justify-between items-center mb-2 ">
+              <!-- Heart button with data attribute for state -->
+
+              <img src="./assets/emergency.png" alt="Icon" class=" w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">National Emergency Number</h3>
+              <p class="text-sm text-gray-500">জাতীয় জরুরী সেবা</p>
+              <div class="text-3xl font-bold text-gray-800">999</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Police Helpline Number -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Police Helpline Number" data-service-number="999">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/police.png" alt="Icon" class="w-12 h-12  bg-[#FFE3E2]  rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Police Helpline Number</h3>
+              <p class="text-sm text-gray-500">পুলিশ হেল্পলাইন</p>
+              <div class="text-3xl font-bold text-gray-800">999</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Fire Service Number -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Fire Service Number" data-service-number="999">
+            <div class="flex justify-between items-center mb-2">
+
+                <img src="./assets/fire-service.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Fire Service Number</h3>
+              <p class="text-sm text-gray-500">ফায়ার সার্ভিস</p>
+              <div class="text-3xl font-bold text-gray-800">999</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Ambulance Service -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Ambulance Service" data-service-number="1994-999999">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/ambulance.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Ambulance Service</h3>
+              <p class="text-sm text-gray-500">অ্যাম্বুলেন্স</p>
+              <div class="text-3xl font-bold text-gray-800">1994-999999</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Women & Child Helpline -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Women & Child Helpline" data-service-number="109">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/emergency.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Women & Child Helpline</h3>
+              <p class="text-sm text-gray-500">নারী ও শিশু হেল্পলাইন</p>
+              <div class="text-3xl font-bold text-gray-800">109</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Anti-Corruption Helpline -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Anti-Corruption Helpline" data-service-number="106">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/emergency.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Anti-Corruption Helpline</h3>
+              <p class="text-sm text-gray-500">দুর্নীতি দমন</p>
+              <div class="text-3xl font-bold text-gray-800">106</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 7: Electricity Helpline -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Electricity Helpline" data-service-number="16216">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/emergency.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Electricity Helpline</h3>
+              <p class="text-sm text-gray-500">বিদ্যুৎ বিভাগ</p>
+              <div class="text-3xl font-bold text-gray-800">16216</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 8: Brac Helpline -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Brac Helpline" data-service-number="16445">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/emergency.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg">
+              <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Brac Helpline</h3>
+              <p class="text-sm text-gray-500">ব্র্যাক</p>
+              <div class="text-3xl font-bold text-gray-800">16445</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 9: Bangladesh Railway Helpline -->
+          <div class="card-item bg-white p-4 rounded-lg shadow-md flex flex-col" data-service-name="Bangladesh Railway Helpline" data-service-number="163">
+            <div class="flex justify-between items-center mb-2">
+                <img src="./assets/emergency.png" alt="Icon" class="w-12 h-12 bg-[#FFE3E2] rounded-lg" >
+                <button class="favorite-btn text-gray-400 text-2xl cursor-pointer" data-favorited="false">
+                    <!-- Font Awesome icon for card. 'fa-regular' is the hollow heart. -->
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </button>
+              
+            </div>
+            <div class="flex-grow text-center my-4">
+              <h3 class="font-semibold text-gray-700">Bangladesh Railway Helpline</h3>
+              <p class="text-sm text-gray-500">বাংলাদেশ রেলওয়ে</p>
+              <div class="text-3xl font-bold text-gray-800">163</div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <button class="copy-btn bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">
+                Copy
+              </button>
+              <button class="call-btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Call History -->
+      <div class="space-y-4">
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl font-bold text-gray-800">Call History</h2>
+          <button id="clearHistoryBtn" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+            Clear
+          </button>
+        </div>
+
+        <!-- Call History Items will be dynamically added here -->
+        <div id="callHistoryContainer" class="bg-white p-4 rounded-lg shadow-md space-y-4">
+          <!-- Initial placeholder history items, will be removed dynamically -->
+          <div class="flex justify-between items-center text-gray-600">
+            <div>
+              <p class="font-medium">Fire Service Number</p>
+              <p class="text-sm">999</p>
+            </div>
+            <div class="text-right">
+              <p class="text-xs">11:36:58 AM</p>
+              <p class="text-xs">28/08/2025</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-gray-600">
+            <div>
+              <p class="font-medium">National Emergency Number</p>
+              <p class="text-sm">999</p>
+            </div>
+            <div class="text-right">
+              <p class="text-xs">11:36:58 AM</p>
+              <p class="text-xs">28/08/2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+
+  <script>
+    // Wait for the window to load before running the script
+    window.onload = function() {
+      // DOM Element references
+      const heartCountSpan = document.getElementById('heartCount');
+      const coinCountSpan = document.getElementById('coinCount');
+      const copyCountSpan = document.getElementById('copyCount');
+      const callHistoryContainer = document.getElementById('callHistoryContainer');
+      const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+      const mainContent = document.querySelector('main');
+
+      // State variables
+      let heartCount = 0;
+      let coinCount = 100;
+      let copyCount = 0;
+      const callCost = 20;
+
+      // Event Listeners using Event Delegation on the main content area
+      mainContent.addEventListener('click', function(event) {
+        // Check for Heart button clicks
+        const favoriteBtn = event.target.closest('.favorite-btn');
+        if (favoriteBtn) {
+          handleFavoriteClick(favoriteBtn);
+        }
+
+        // Check for Call button clicks
+        if (event.target.classList.contains('call-btn')) {
+          handleCallClick(event);
+        }
+
+        // Check for Copy button clicks
+        if (event.target.classList.contains('copy-btn')) {
+          handleCopyClick(event);
+        }
+      });
+
+      // Clear History button listener
+      clearHistoryBtn.addEventListener('click', function() {
+        // Clear all child elements from the call history container
+        callHistoryContainer.innerHTML = '';
+        alert('Call history cleared successfully!');
+      });
+
+      // Function to handle favorite heart button clicks
+      function handleFavoriteClick(button) {
+        const isFavorited = button.getAttribute('data-favorited') === 'true';
+
+        if (isFavorited) {
+          // If already favorited, unfavorite it
+          button.setAttribute('data-favorited', 'false');
+          button.classList.remove('text-red-500');
+          button.classList.add('text-gray-400');
+          heartCount--;
+        } else {
+          // If not favorited, favorite it
+          button.setAttribute('data-favorited', 'true');
+          button.classList.remove('text-gray-400');
+          button.classList.add('text-red-500');
+          heartCount++;
+        }
+        heartCountSpan.textContent = heartCount;
+      }
+
+      // Function to handle call button clicks
+      function handleCallClick(event) {
+        if (coinCount < callCost) {
+          alert("Insufficient coins to make a call.");
+          return;
+        }
+
+        // Get service name and number from data attributes on the parent card
+        const cardItem = event.target.closest('.card-item');
+        const serviceName = cardItem.getAttribute('data-service-name');
+        const serviceNumber = cardItem.getAttribute('data-service-number');
+
+        // Deduct coins and update count
+        coinCount -= callCost;
+        coinCountSpan.textContent = coinCount;
+
+        // Show alert
+        alert(`Calling ${serviceName}: ${serviceNumber}`);
+
+        // Get current time and date
+        const now = new Date();
+        const time = now.toLocaleTimeString('en-US', { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        const date = now.toLocaleDateString('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+        // Create new history item element
+        const newHistoryItem = document.createElement('div');
+        newHistoryItem.className = 'flex justify-between items-center text-gray-600';
+        newHistoryItem.innerHTML = `
+          <div>
+            <p class="font-medium">${serviceName}</p>
+            <p class="text-sm">${serviceNumber}</p>
+          </div>
+          <div class="text-right">
+            <p class="text-xs">${time}</p>
+            <p class="text-xs">${date}</p>
+          </div>
+        `;
+
+        // Add the new item to the history container, at the top
+        callHistoryContainer.prepend(newHistoryItem);
+      }
+
+      // Function to handle copy button clicks
+      function handleCopyClick(event) {
+        const cardItem = event.target.closest('.card-item');
+        const serviceNumber = cardItem.getAttribute('data-service-number');
+
+        // Use a temporary textarea to copy to clipboard
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.value = serviceNumber;
+        document.body.appendChild(tempTextarea);
+        tempTextarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempTextarea);
+
+        // Show alert
+        alert(`'${serviceNumber}' copied to clipboard!`);
+
+        // Update copy count
+        copyCount++;
+        copyCountSpan.textContent = copyCount;
+      }
+    };
+  </script>
+
+
 
 
 
